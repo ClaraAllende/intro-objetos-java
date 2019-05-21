@@ -3,7 +3,7 @@ package tamagotchi;
 public class Mascota {
     private Estado estado = new Aburrida(); //"nace" aburrida, porque pintó.
     private Integer nivelDeContentura = 0;
-    private Long minutosAburrida = System.currentTimeMillis();  //le setea la hora del sistema en milisegundos al momento de creación de la mascota.
+    private Long minutosAburrida = 0L;
     private Integer cantidadDeVecesQueJugo = 0;
 
 
