@@ -8,6 +8,12 @@ public class Micro {
     private Integer volumen = 0;
     private List<Persona> pasajeros = new ArrayList<>();
 
+    public Micro(Integer cantidadSentados, Integer cantidadParados, Integer volumen) {
+        this.cantidadSentados = cantidadSentados;
+        this.cantidadParados = cantidadParados;
+        this.volumen = volumen;
+    }
+
     /**
      * Punto 1: Preguntar al micro si una persona se puede subir.
      * Es decir, si el micro tiene lugar y la persona acepta subir al micro.
