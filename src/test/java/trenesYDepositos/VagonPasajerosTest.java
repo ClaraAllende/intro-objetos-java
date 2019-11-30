@@ -1,6 +1,5 @@
 package trenesYDepositos;
 
-import main.trenesYDepositos.VagonPasajeros;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
