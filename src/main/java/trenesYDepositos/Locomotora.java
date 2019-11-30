@@ -1,6 +1,6 @@
-package main.trenesYDepositos;
+package trenesYDepositos;
 
-import main.trenesYDepositos.excepciones.ParametrosIncorrectosException;
+import trenesYDepositos.excepciones.ParametrosIncorrectosException;
 
 public class Locomotora {
     private Double peso; //En kg

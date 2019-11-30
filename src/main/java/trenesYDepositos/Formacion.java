@@ -1,4 +1,4 @@
-package main.trenesYDepositos;
+package trenesYDepositos;
 
 import java.util.ArrayList;
 import java.util.Comparator;

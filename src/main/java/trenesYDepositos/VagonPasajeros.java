@@ -1,4 +1,4 @@
-package main.trenesYDepositos;
+package trenesYDepositos;
 
 public class VagonPasajeros implements Vagon {
     private Double largo; //En metros

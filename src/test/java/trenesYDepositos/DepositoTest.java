@@ -1,4 +1,4 @@
-package test.trenesYDepositos;
+package trenesYDepositos;
 
 import main.trenesYDepositos.*;
 import main.trenesYDepositos.excepciones.ParametrosIncorrectosException;

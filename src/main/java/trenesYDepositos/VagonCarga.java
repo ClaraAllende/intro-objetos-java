@@ -1,4 +1,4 @@
-package main.trenesYDepositos;
+package trenesYDepositos;
 
 public class VagonCarga implements Vagon {
     private Double cargaMaxima; // En kg

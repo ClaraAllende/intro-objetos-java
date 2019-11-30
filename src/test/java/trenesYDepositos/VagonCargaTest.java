@@ -1,4 +1,4 @@
-package test.trenesYDepositos;
+package trenesYDepositos;
 
 import main.trenesYDepositos.VagonCarga;
 import org.junit.jupiter.api.Test;

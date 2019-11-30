@@ -1,4 +1,4 @@
-package main.trenesYDepositos.excepciones;
+package trenesYDepositos.excepciones;
 
 public class ParametrosIncorrectosException extends RuntimeException {
 

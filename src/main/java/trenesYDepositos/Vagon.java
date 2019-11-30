@@ -1,4 +1,4 @@
-package main.trenesYDepositos;
+package trenesYDepositos;
 
 public interface Vagon {
 
