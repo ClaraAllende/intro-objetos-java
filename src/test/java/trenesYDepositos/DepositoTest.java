@@ -1,11 +1,8 @@
 package trenesYDepositos;
 
-import main.trenesYDepositos.*;
-import main.trenesYDepositos.excepciones.ParametrosIncorrectosException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
+import trenesYDepositos.excepciones.ParametrosIncorrectosException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class)
 class DepositoTest {
 
     private Deposito deposito;
