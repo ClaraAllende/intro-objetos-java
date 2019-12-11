@@ -1,8 +1,8 @@
 package main.kotlin.trenesYDepositos
 
 class FormacionKotlin(
-        val locomotoras: MutableList<LocomotoraKotlin> = mutableListOf(),
-        var vagones: List<VagonKotlin> = emptyList()
+    val locomotoras: MutableList<LocomotoraKotlin> = mutableListOf(),
+    var vagones: List<VagonKotlin> = emptyList()
 ) {
     fun cantidadMaximaPAsajeros() =
             vagones.map { it.cantidadMaximaPasajeros() }.sum()
@@ -10,7 +10,7 @@ class FormacionKotlin(
     fun cantidadVagonesLivianos() = vagones.count { it.esLiviano() }
 
     fun velocidadMaxima() = locomotoras.minBy{ it.velocidadMaxima }
-            ?.velocidadMaxima
+        ?.velocidadMaxima
             ?: throw  RuntimeException()
 
     fun esEficiente() = locomotoras.all { it.esEficiente() }

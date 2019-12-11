@@ -13,8 +13,8 @@ class VagonCargaKotlin(val cargaMaxima: Double = 0.0) : VagonKotlin {
 }
 
 class VagonPasajerosKotlin(
-        val largo: Double = 0.0,
-        val anchoUtil: Double = 0.0
+    val largo: Double = 0.0,
+    val anchoUtil: Double = 0.0
 ) : VagonKotlin {
     override fun cantidadMaximaPasajeros() =
             if (anchoUtil <= 2.5) largo.toInt() * 8 else largo.toInt() * 10

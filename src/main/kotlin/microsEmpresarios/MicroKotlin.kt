@@ -3,9 +3,9 @@ package main.kotlin.microsEmpresarios
 import microsEmpresarios.NoSePudoSubirPasajeroException
 
 class MicroKotlin(
-        var cantidadSentados: Int = 0,
-        var cantidadParados: Int = 0,
-        val volumen: Int = 0
+    var cantidadSentados: Int = 0,
+    var cantidadParados: Int = 0,
+    val volumen: Int = 0
 ) {
     val pasajeros: MutableList<PersonaKotlin> = mutableListOf()
 
@@ -13,17 +13,20 @@ class MicroKotlin(
 
     fun subirSiPodesA(persona: PersonaKotlin) {
         pasajeros.takeIf { puedeSubir(persona) }
-                ?.add(persona)
+            ?.add(persona)
                 ?: throw NoSePudoSubirPasajeroException("El pax no se puede subir")
     }
 
     fun bajarA(persona: PersonaKotlin) {
         pasajeros.takeIf { pasajeros.contains(persona) }
-                ?.remove(persona)
+            ?.remove(persona)
                 ?: throw RuntimeException("No hay nadie en el micro para bajar")
     }
 
-    fun quienSubioPrimero() = pasajeros[0]
+    fun quienSubioPrimero() =
+        pasajeros.takeUnless { pasajeros.isEmpty() }
+            ?.let { it[0] }
+                ?: throw RuntimeException("No hay nadie en el micro para bajar")
 
     fun hayLugar() = cantidadPersonas() < capacidadTotal()
 
