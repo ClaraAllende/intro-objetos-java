@@ -24,5 +24,6 @@ hs_err_pid*
 
 intro-objetos-ada.iml
 .idea/
+target/
 
 *.DS_Store
