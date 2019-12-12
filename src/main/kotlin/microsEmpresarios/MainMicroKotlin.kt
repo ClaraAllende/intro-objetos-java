@@ -1,7 +1,6 @@
 package main.kotlin.microsEmpresarios
 
 fun main(args: Array<String>) {
-    println("Hello world!")
 
     //El constructor del Micro es (cantParados, cantSentados, volumen)
     val elrapido = MicroKotlin(cantidadSentados = 20, cantidadParados =  20, volumen = 200)
@@ -26,5 +25,5 @@ fun main(args: Array<String>) {
     //chevallier.bajaA(jonasa);
 
     println(elrapido.quienSubioPrimero())
-    println(chevallier.quienSubioPrimero())
+    //println(chevallier.quienSubioPrimero())
 }

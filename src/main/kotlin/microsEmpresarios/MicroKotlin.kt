@@ -24,9 +24,7 @@ class MicroKotlin(
     }
 
     fun quienSubioPrimero() =
-        pasajeros.takeUnless { pasajeros.isEmpty() }
-            ?.let { it[0] }
-                ?: throw RuntimeException("No hay nadie en el micro para bajar")
+        pasajeros.firstOrNull()?: throw RuntimeException("No hay nadie en el micro para bajar")
 
     fun hayLugar() = cantidadPersonas() < capacidadTotal()
 
